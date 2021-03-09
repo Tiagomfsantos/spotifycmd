@@ -1,0 +1,32 @@
+#summary Compile and usage instructions
+
+= Introduction =
+
+spotify_cmd is a tool to control a running instance of Spotify under wine, it should work on Windows as well but have not been tested.
+
+
+= Compile =
+
+ wineg++ spotify_cmd.cpp -o spotify_cmd.exe
+
+You should now have a Linux executable file named spotify_cmd.exe
+
+= Usage =
+
+ _Play/pause playback_ *./spotify_cmd.exe playpause*
+
+ _Stop playback_ *./spotify_cmd.exe stop*
+
+ _Next track_ *./spotify_cmd.exe next*
+
+ _Previous track_ *./spotify_cmd.exe prev*
+
+ _Mute_ *./spotify_cmd.exe mute*
+
+ _Volume down_ *./spotify_cmd.exe voldown*
+
+ _Volume up_ *./spotify_cmd.exe volup*
+
+ _Artist and track information_ *Run:*./spotify_cmd.exe status
+
+*Do NOT run as "_wine spotify_cmd.exe_" it will not work, spotify_cmd.exe is a Linux binary.*
